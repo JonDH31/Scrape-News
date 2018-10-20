@@ -15,7 +15,7 @@ var PORT = process.env.PORT || 3000;
 
 // Use morgan and body parser with our app
 app.use(logger("dev"));
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 // allow the handlesbars engine to be in our toolset
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
